@@ -70,7 +70,7 @@ terraform destroy -auto-approve
 <br>
 <br>
 <br>
-C:\Users\navee\OneDrive\Pictures\Screenshots\Screenshot 2025-09-25 213258.png
+<img width="1789" height="951" alt="Screenshot 2025-09-25 213258" src="https://github.com/user-attachments/assets/6936857a-d100-4c85-9a52-142248226fd9" />
 <br>
 <br>
 <br>
