@@ -1,0 +1,38 @@
+# Simulated execution log (example) - run locally to generate real logs
+
+>>> terraform init
+Initializing the backend...
+
+Initializing provider plugins...
+- Finding kreuzwerker/docker versions matching "~> 3.7.0"...
+- Installing kreuzwerker/docker v3.7.0...
+Terraform has been successfully initialized!
+
+>>> terraform plan -out=tfplan
+Refreshing Terraform state in-memory prior to plan...
+data.external.foo: Refreshing state...
+...
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+>>> terraform apply tfplan
+docker_image.nginx: Creating...
+docker_image.nginx: Creation complete after 0s [id=sha256:...:nginx:latest]
+docker_container.nginx: Creating...
+docker_container.nginx: Creation complete after 1s [id=3b2f...]
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+container_id = "3b2f..."
+
+>>> docker ps
+CONTAINER ID   IMAGE          NAMES             PORTS
+3b2f...         nginx:latest   terraform-nginx   0.0.0.0:8080->80/tcp
+
+>>> terraform state list
+docker_image.nginx
+docker_container.nginx
+
+>>> terraform destroy -auto-approve
+docker_container.nginx: Destroying... [id=3b2f...]
+docker_container.nginx: Destruction complete after 1s
+Apply complete! Resources: 0 added, 0 changed, 1 destroyed.
