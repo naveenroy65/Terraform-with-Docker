@@ -64,3 +64,20 @@ terraform destroy -auto-approve
 
 ## Security
 - This example runs a simple public `nginx` image and maps a host port. Do not use `latest` in production without controlled pinning; consider using digest-pinned images.
+
+
+<img width="1701" height="713" alt="Screenshot 2025-09-25 213244" src="https://github.com/user-attachments/assets/adfc465d-fb5a-46c8-a770-ae50807199a8" />
+<br>
+<br>
+<br>
+C:\Users\navee\OneDrive\Pictures\Screenshots\Screenshot 2025-09-25 213258.png
+<br>
+<br>
+<br>
+<img width="1914" height="926" alt="Screenshot 2025-09-25 213345" src="https://github.com/user-attachments/assets/1085ac28-d8fe-4d03-a5f8-9e839294e3dd" />
+<br>
+<br>
+<br>
+<img width="1859" height="966" alt="Screenshot 2025-09-25 213149" src="https://github.com/user-attachments/assets/e7d3c012-eee5-41c0-afe4-bf533e856be1" />
+
+
